@@ -1,0 +1,128 @@
+/**
+* @name Roundrect
+* @author KawaiiZenbo#8387
+* @description starring your favorite shape
+* @version 1.0
+*/
+
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/main.css');
+@import url("https://discordstyles.github.io/RadialStatus/base.css");
+@import url("https://kawaiizenbo.github.io/themes/roundrect/main.css");
+
+:root 
+{
+    /* radialstaus settings */
+    --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 3px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+    --rs-avatar-shape: 15%; /* 50% for round - 0% for square */
+
+    --rs-online-color: #43b581; /* Color for online status */
+    --rs-idle-color: #faa61a; /* Color for idle status */
+    --rs-dnd-color: #f04747; /* Color for dnd status */
+    --rs-offline-color: #636b75; /* Color for offline status */
+    --rs-streaming-color: #643da7; /* Color for streaming status */
+    --rs-invisible-color: #747f8d; /* Color for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
+    /* color presets */
+    /* if you want to use a different theme uncomment it and recomment the rest
+
+    /* dark blue mode */
+    --bg1: rgb(24, 28, 37);
+    --bg2: rgb(22, 26, 35);
+    --bg3: rgb(20, 24, 33);
+    --bg4: rgb(18, 22, 31);
+
+    /* dark green mode */
+    /*
+    --bg1: rgb(24, 37, 28);
+    --bg2: rgb(22, 35, 26);
+    --bg3: rgb(20, 33, 24);
+    --bg4: rgb(18, 31, 22);
+    */
+
+    /* brown mode */
+    /*
+    --bg1: rgb(37, 28, 24);
+    --bg2: rgb(35, 26, 22);
+    --bg3: rgb(33, 24, 20);
+    --bg4: rgb(31, 22, 18);
+    */
+
+    /* dark red mode */
+    /*
+    --bg1: rgb(37, 0, 0);
+    --bg2: rgb(35, 0, 0);
+    --bg3: rgb(33, 0, 0);
+    --bg4: rgb(31, 0, 0);
+    */
+
+    /* darkest mode */
+    /*
+    --bg1: rgb(0, 24, 24);
+    --bg2: rgb(0, 22, 22);
+    --bg3: rgb(0, 20, 20);
+    --bg4: rgb(0, 18, 18);
+    */
+
+    /* darker mode */
+    /*
+    --bg1: rgb(37, 37, 37);
+    --bg2: rgb(35, 35, 35);
+    --bg3: rgb(33, 33, 35);
+    --bg4: rgb(31, 31, 31);
+    */
+
+    /* even darker mode */
+    /*
+    --bg1: rgb(24, 24, 24);
+    --bg2: rgb(22, 22, 22);
+    --bg3: rgb(20, 20, 20);
+    --bg4: rgb(18, 18, 18);
+    */
+
+    /* darkest mode */
+    /*
+    --bg1: rgb(0, 0, 0);
+    --bg2: rgb(0, 0, 0);
+    --bg3: rgb(0, 0, 0);
+    --bg4: rgb(0, 0, 0);
+    */
+
+    /* pisscord mode */
+    /*
+    --bg1: rgb(255, 255, 0);
+    --bg2: rgb(244, 244, 0);
+    --bg3: rgb(233, 233, 0);
+    --bg4: rgb(222, 222, 0);
+    */
+
+    /* trans mode */
+    --lbg1: rgb(255, 255, 255);
+    --lbg2: rgb(133, 201, 255);
+    --lbg3: rgb(133, 201, 255);
+    --lbg4: rgb(255, 133, 201);
+
+    /* clear mode */
+    /*
+    --bg1: transparent;
+    --bg2: transparent;
+    --bg3: transparent;
+    --bg4: transparent;
+    */
+
+    /* other color defs */
+    --button1color: #ed4245;
+    --button2color: #3ba55d;
+    --button3color: #faa81a;
+
+    --svgcolors: transparent;
+}

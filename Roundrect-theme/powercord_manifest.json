@@ -1,0 +1,9 @@
+{
+    "name": "Roundrect",
+    "description": "starring your favorite shape.",
+    "version": "1.0",
+    "author": "KawaiiZenbo#8387",
+    "theme": "Roundrect.theme.css",
+    "consent": "false",
+    "license": "MIT"
+}
