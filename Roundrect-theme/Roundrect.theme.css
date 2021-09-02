@@ -5,9 +5,9 @@
 * @version 1.0
 */
 
-@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/main.css');
+@import url('https://raw.githubusercontent.com/Goose-Nest/GT-RevertRebrand/main/RevertRebrand.theme.css');
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
-@import url("https://kawaiizenbo.github.io/themes/roundrect/main.css");
+@import url("https://raw.githubusercontent.com/kawaiizenbo/Roundrect/main/src/main.css");
 
 :root 
 {
@@ -22,9 +22,9 @@
 
     --rs-avatar-shape: 15%; /* 50% for round - 0% for square */
 
-    --rs-online-color: #43b581; /* Color for online status */
-    --rs-idle-color: #faa61a; /* Color for idle status */
-    --rs-dnd-color: #f04747; /* Color for dnd status */
+    --rs-online-color: #33b571; /* Color for online status */
+    --rs-idle-color: #fab61a; /* Color for idle status */
+    --rs-dnd-color: #f03737; /* Color for dnd status */
     --rs-offline-color: #636b75; /* Color for offline status */
     --rs-streaming-color: #643da7; /* Color for streaming status */
     --rs-invisible-color: #747f8d; /* Color for invisible status - Note: this will only show for your own invisibility */
@@ -118,11 +118,4 @@
     --bg3: transparent;
     --bg4: transparent;
     */
-
-    /* other color defs */
-    --button1color: #ed4245;
-    --button2color: #3ba55d;
-    --button3color: #faa81a;
-
-    --svgcolors: transparent;
 }
