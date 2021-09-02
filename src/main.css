@@ -9,12 +9,6 @@ body
     --lbg2: rgb(133, 201, 255);
     --lbg3: rgb(133, 201, 255);
     --lbg4: rgb(255, 133, 201);
-
-    --button1color: #ed4245;
-    --button2color: #3ba55d;
-    --button3color: #faa81a;
-
-    --svgcolors: transparent;
 }
 
 .theme-dark 
@@ -156,24 +150,10 @@ div.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"], .wordmarkWindows-1v0
     display: none !important;
 }
 
-.titleBar-AC4pGV:hover
-{
-    --button1color: #ed4245;
-    --button2color: #3ba55d;
-    --button3color: #faa81a;
-    --svgcolors: #ffffff;
-}
-
-.platform-win [aria-label=Maximize],.winButtonClose-1HsbF-,.winButtonMinMax-PBQ2gm:nth-child(4)
-{
-    color: var(--svgcolors) !important;
-}
-
 .winButtonClose-1HsbF-
 {
     height: 20px;
     width: 20px;
-    background-color: var(--button1color);
     border-radius: 15%;
     right: 1px;
     top: -3px;
@@ -193,7 +173,6 @@ div.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"], .wordmarkWindows-1v0
 {
     height: 20px;
     width: 20px;
-    background-color: var(--button3color);
     border-radius: 15%;
     right: 5px;
     top: -3px;
@@ -208,4 +187,3 @@ div.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"], .wordmarkWindows-1v0
 {
     border-radius: 0 0 0 0;
 }
-
