@@ -2,301 +2,341 @@
 * @name Roundrect
 * @author KawaiiZenbo#8387
 * @description starring your favorite shape
-* @version 1.0
+* @version 1.2
 */
 
-@import url('https://kawaiizenbo.github.io/themes/roundrect/RevertRebrand.theme.css');
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+/* revertrebrand stuff */
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/variables.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/hardcoded.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/mentions.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/reactions.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/folders.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/general/inputs.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/general/svgs.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/general/other.css");
 
-:root 
-{
-    /* radialstaus settings */
-    --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 3px; /* Gap between avatar and status for User profiles | MUST end in px */
-
-    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-
-    --rs-avatar-shape: 15%; /* 50% for round - 0% for square */
-
-    --rs-online-color: #33b571; /* Color for online status */
-    --rs-idle-color: #fab61a; /* Color for idle status */
-    --rs-dnd-color: #f03737; /* Color for dnd status */
-    --rs-offline-color: #636b75; /* Color for offline status */
-    --rs-streaming-color: #643da7; /* Color for streaming status */
-    --rs-invisible-color: #747f8d; /* Color for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-
-    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-
-    /* color presets */
-    /* if you want to use a different theme uncomment it and recomment the rest
+:root {
+  /* colour presets */
+  /* if you want to use a different theme uncomment it and recomment the rest
 
     /* dark blue mode */
-    --bg1: rgb(24, 28, 37);
-    --bg2: rgb(22, 26, 35);
-    --bg3: rgb(20, 24, 33);
-    --bg4: rgb(18, 22, 31);
+  --bg1: rgb(24, 28, 37);
+  --bg2: rgb(22, 26, 35);
+  --bg3: rgb(20, 24, 33);
+  --bg4: rgb(18, 22, 31);
 
-    /* dark green mode */
-    /*
+  /* dark green mode */
+  /*
     --bg1: rgb(24, 37, 28);
     --bg2: rgb(22, 35, 26);
     --bg3: rgb(20, 33, 24);
     --bg4: rgb(18, 31, 22);
     */
 
-    /* brown mode */
-    /*
+  /* brown mode */
+  /*
     --bg1: rgb(37, 28, 24);
     --bg2: rgb(35, 26, 22);
     --bg3: rgb(33, 24, 20);
     --bg4: rgb(31, 22, 18);
     */
 
-    /* dark red mode */
-    /*
+  /* dark red mode */
+  /*
     --bg1: rgb(37, 0, 0);
     --bg2: rgb(35, 0, 0);
     --bg3: rgb(33, 0, 0);
     --bg4: rgb(31, 0, 0);
     */
 
-    /* darkest mode */
-    /*
+  /* darkest mode */
+  /*
     --bg1: rgb(0, 24, 24);
     --bg2: rgb(0, 22, 22);
     --bg3: rgb(0, 20, 20);
     --bg4: rgb(0, 18, 18);
     */
 
-    /* darker mode */
-    /*
+  /* darker mode */
+  /*
     --bg1: rgb(37, 37, 37);
     --bg2: rgb(35, 35, 35);
     --bg3: rgb(33, 33, 35);
     --bg4: rgb(31, 31, 31);
     */
 
-    /* even darker mode */
-    /*
+  /* even darker mode */
+  /*
     --bg1: rgb(24, 24, 24);
     --bg2: rgb(22, 22, 22);
     --bg3: rgb(20, 20, 20);
     --bg4: rgb(18, 18, 18);
     */
 
-    /* darkest mode */
-    /*
+  /* darkest mode */
+  /*
     --bg1: rgb(0, 0, 0);
     --bg2: rgb(0, 0, 0);
     --bg3: rgb(0, 0, 0);
     --bg4: rgb(0, 0, 0);
     */
 
-    /* pisscord mode */
-    /*
+  /* pisscord mode */
+  /*
     --bg1: rgb(255, 255, 0);
     --bg2: rgb(244, 244, 0);
     --bg3: rgb(233, 233, 0);
     --bg4: rgb(222, 222, 0);
     */
 
-    /* trans mode */
-    --lbg1: rgb(255, 255, 255);
-    --lbg2: rgb(133, 201, 255);
-    --lbg3: rgb(133, 201, 255);
-    --lbg4: rgb(255, 133, 201);
+  /* trans mode */
+  --lbg1: rgb(255, 255, 255);
+  --lbg2: rgb(133, 201, 255);
+  --lbg3: rgb(133, 201, 255);
+  --lbg4: rgb(255, 133, 201);
 
-    /* clear mode */
-    /*
+  /* clear mode (this does not work) */
+  /*
     --bg1: transparent;
     --bg2: transparent;
     --bg3: transparent;
     --bg4: transparent;
     */
+  --avatar-shape: 20%; /* please dont change this */
 }
 
-.theme-dark 
-{
-    --background-tertiary: var(--bg4);
-    --background-secondary: var(--bg3);
-    --background-secondary-alt: var(--bg3);
-    --background-primary: var(--bg1);
-    --channeltextarea-background: var(--bg3);
-    --background-accent: #6E85D3;
-    --background-message-hover: var(--bg2);
-    --background-modifier-hover: var(--bg2);
-    --background-modifier-active: var(--bg4);
-    --background-modifier-selected: var(--bg4);
-    --background-floating: var(--bg3);
-    --elevation-low: none;
-    --scrollbar-auto-thumb: var(--bg4);
-    --scrollbar-auto-track: var(--bg1);
-    --scrollbar-thin-thumb: var(--bg4);
-    --activity-card-background: var(--bg3);
+.theme-dark {
+  --background-tertiary: var(--bg4);
+  --background-secondary: var(--bg3);
+  --background-secondary-alt: var(--bg3);
+  --background-primary: var(--bg1);
+  --channeltextarea-background: var(--bg3);
+  --background-accent: #6e85d3;
+  --background-message-hover: var(--bg2);
+  --background-modifier-hover: var(--bg2);
+  --background-modifier-active: var(--bg4);
+  --background-modifier-selected: var(--bg4);
+  --background-floating: var(--bg3);
+  --elevation-low: none;
+  --scrollbar-auto-thumb: var(--bg4);
+  --scrollbar-auto-track: var(--bg1);
+  --scrollbar-thin-thumb: var(--bg4);
+  --activity-card-background: var(--bg3);
 }
 
-.theme-light
-{
-    --background-tertiary: var(--lbg4);
-    --background-secondary: var(--lbg3);
-    --background-secondary-alt: var(--lbg3);
-    --background-primary: var(--lbg1);
-    --channeltextarea-background: var(--lbg3);
-    --background-accent: #6E85D3;
-    --background-message-hover: var(--lbg2);
-    --background-modifier-hover: var(--lbg2);
-    --background-modifier-active: var(--lbg4);
-    --background-modifier-selected: var(--lbg4);
-    --background-floating: var(--lbg3);
-    --elevation-low: none;
-    --scrollbar-auto-thumb: var(--lbg4);
-    --scrollbar-auto-track: var(--lbg1);
-    --scrollbar-thin-thumb: var(--lbg4);
-    --activity-card-background: var(--lbg3);
+.theme-light {
+  --background-tertiary: var(--lbg4);
+  --background-secondary: var(--lbg3);
+  --background-secondary-alt: var(--lbg3);
+  --background-primary: var(--lbg1);
+  --channeltextarea-background: var(--lbg3);
+  --background-accent: #6e85d3;
+  --background-message-hover: var(--lbg2);
+  --background-modifier-hover: var(--lbg2);
+  --background-modifier-active: var(--lbg4);
+  --background-modifier-selected: var(--lbg4);
+  --background-floating: var(--lbg3);
+  --elevation-low: none;
+  --scrollbar-auto-thumb: var(--lbg4);
+  --scrollbar-auto-track: var(--lbg1);
+  --scrollbar-thin-thumb: var(--lbg4);
+  --activity-card-background: var(--lbg3);
 }
 
-.peopleColumn-29fq28 
-{
-    background: var(--background-primary);
+.peopleColumn-29fq28 {
+  background: var(--background-primary);
 }
 
-.contentRegion-3nDuYy 
-{
-    flex: 1 1 100%;
+.contentRegion-3nDuYy {
+  flex: 1 1 100%;
 }
 
 .contentColumn-2hrIYH,
 .customColumn-Rb6toI,
 .sidebarScrollable-1qPI87 + .content-1rPSz4,
-.customScroller-26gWhv > div 
-{
-    max-width: 95%;
+.customScroller-26gWhv > div {
+  max-width: 95%;
 }
 
-.sidebar-CFHs9e 
-{
-    padding: 60px 0 35px 50px;
-    width: 260px;
+.sidebar-CFHs9e {
+  padding: 60px 0 35px 50px;
+  width: 260px;
 }
 
 .sidebar-CFHs9e > div > .item-PXvHYJ,
-#bd-settings-sidebar .ui-tab-bar-item 
-{
-    padding: 8px 0 8px 10px;
-    margin-bottom: 0;
-    border-radius: 5px 0 0 5px;
+#bd-settings-sidebar .ui-tab-bar-item {
+  padding: 8px 0 8px 10px;
+  margin-bottom: 0;
+  border-radius: 5px 0 0 5px;
 }
 
-.role-2irmRk 
-{
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    border: solid;
-    border-width: 0px 0px 0px 2px;
-    border-radius: 0px 12px 12px 0px;
+.role-2irmRk {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: solid;
+  border-width: 0px 0px 0px 2px;
+  border-radius: 0px 12px 12px 0px;
 }
-  
-.roleCircle-3xAZ1j 
-{
-    width: 5 !important;
-    height: 5 !important;
+
+.roleCircle-3xAZ1j {
+  width: 5 !important;
+  height: 5 !important;
 }
-  
-.roleCircle-3xAZ1j::before 
-{
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    opacity: 0.3;
-    z-index: -1;
+
+.roleCircle-3xAZ1j::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .content-1x5b-n {
-    background-color: var(--bg4);
-  	border-style: solid;
-  	border-color: #666666;
-  	border-width: 0px 0px 0px 4px;
-    border-radius: 0px 25px 25px 0px;
+  background-color: var(--bg4);
+  border-style: solid;
+  border-color: #666666;
+  border-width: 0px 0px 0px 4px;
+  border-radius: 0px 25px 25px 0px;
 }
 
-.unread-2lAfLh 
-{
-    z-index: 1;
-    position: absolute;
-    height: 32px;
-    width: 4px;
-    border-radius: 0 0 0 0;
-    top: 1px;
-    left: 8px;
-    margin-top: 0px;
+.unread-2lAfLh {
+  z-index: 1;
+  position: absolute;
+  height: 32px;
+  width: 4px;
+  border-radius: 0 0 0 0;
+  top: 1px;
+  left: 8px;
+  margin-top: 0px;
 }
 
-.scrollableContainer-2NUZem
-{
-    border: solid;
-    border-color: var(--bg4);
-  	border-width: 0px 0px 0px 4px;
-    border-radius: 0px 25px 25px 0px;
+.scrollableContainer-2NUZem {
+  border: solid;
+  border-color: var(--bg4);
+  border-width: 0px 0px 0px 4px;
+  border-radius: 0px 25px 25px 0px;
 }
 
-.iconWrapper-2OrFZ1 
-{
-    order: -1;
+.iconWrapper-2OrFZ1 {
+  order: -1;
 }
 
-div.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"], .wordmarkWindows-1v0lYD, div[id="user-context-invite-to-server"], div[id="user-context-call"], .guildIconContainer-2FW_iA
-{
-    display: none !important;
+div.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Help"],
+.wordmarkWindows-1v0lYD,
+div[id="user-context-invite-to-server"],
+div[id="user-context-call"],
+.guildIconContainer-2FW_iA {
+  display: none !important;
 }
 
-.winButtonClose-1HsbF-
-{
-    height: 20px;
-    width: 20px;
-    border-radius: 15%;
-    right: 1px;
-    top: -3px;
+.winButtonClose-1HsbF- {
+  height: 20px;
+  width: 20px;
+  border-radius: 15%;
+  right: 1px;
+  top: -3px;
 }
 
-.winButtonMinMax-PBQ2gm:nth-child(3)
-{
-    height: 20px;
-    width: 20px;
-    background-color: var(--button2color);
-    border-radius: 15%;
-    right: 3px;
-    top: -3px;
+.winButtonMinMax-PBQ2gm:nth-child(3) {
+  height: 20px;
+  width: 20px;
+  border-radius: 15%;
+  right: 3px;
+  top: -3px;
 }
 
-.winButtonMinMax-PBQ2gm:nth-child(4)
-{
-    height: 20px;
-    width: 20px;
-    border-radius: 15%;
-    right: 5px;
-    top: -3px;
+.winButtonMinMax-PBQ2gm:nth-child(4) {
+  height: 20px;
+  width: 20px;
+  border-radius: 15%;
+  right: 5px;
+  top: -3px;
 }
 
-.searchBar-3dMhjb
-{
-    width: 240px;
+.searchBar-3dMhjb {
+  width: 240px;
 }
 
-.platform-win .sidebar-2K8pFh 
-{
-    border-radius: 0 0 0 0;
+.platform-win .sidebar-2K8pFh {
+  border-radius: 0 0 0 0;
 }
 
-.baseShapeRound-1Mm1YW
-{
-    border-radius: 15%;
+/* shamelessly stolen from serenade https://github.com/b4skyx/discord-serenade */
+[class^="lowerBadge-"] {
+  top: 0;
+  left: 0;
+}
+
+[class^="lowerBadge-"] > [class^="numberBadge"] {
+  border-radius: var(--avatar-shape);
+}
+
+:root .wrapper-3t9DeA foreignObject,
+:root .callAvatarMask-1SLlRi foreignObject,
+:root .avatarContainer-3CQrif foreignObject,
+:root .avatarMasked-3y6o4j {
+  mask: none;
+  -webkit-mask: none;
+}
+:root .wrapper-3t9DeA,
+:root .avatar-1BDn8e,
+:root .profile-1eT9hT .avatarUploaderInner-3UNxY3,
+:root .voiceAvatar-14IynY,
+:root .avatar-3tNQiO,
+:root .border-Jn5IOt,
+:root .avatar-3bWpYy,
+:root .clickableAvatar-1wQpeh,
+:root .emptyUser-7txhlW,
+:root .avatar-VxgULZ,
+:root .wrapper-2QE8vf.ringingIncoming-38YcLn::after,
+:root .wrapper-2QE8vf.ringingOutgoing-mbXhhQ::after,
+:root .replyAvatar-1K9Wmr,
+:root .avatarSpeaking-2c8-9i,
+:root .avatar-3Heyg_,
+:root .avatarContainer-2LLZwy,
+:root .appAvatar-3bgkQ9 {
+  border-radius: var(--avatar-shape);
+}
+
+:root .wrapper-25eVIn foreignObject {
+  mask: none;
+  -webkit-mask: none;
+}
+
+:root .wrapperSimple-19ogV2 {uwu
+  overflow: visible;
+}
+
+:root .wrapperSimple-19ogV2,
+:root .wrapper-25eVIn foreignObject,
+:root .folderIconWrapper-226oVY,
+:root .folderIconWrapper-1_bOZe,
+:root .expandedFolderBackground-2sPsd-,
+:root .flexChild-faoVW3 .avatarUploaderInner-3UNxY3 {
+  border-radius: var(--avatar-shape);
+}
+
+:root .iconInactive-98JN5i {
+  border-radius: var(--avatar-shape);
+}
+
+:root .wrapper-25eVIn foreignObject:hover foreignObject {
+  border-radius: var(--avatar-shape);
+}
+
+.avatarHint-2A3RNb foreignObject:not(.avatarHintInner-1TvA8u) {
+  mask: unset !important;
+}
+/* end of skid */
+
+.svg-2V3M55 rect {
+  mask: none;
+  rx: 2px;
+  stroke-width: 2px;
+  stroke: var(--bg3);
 }
