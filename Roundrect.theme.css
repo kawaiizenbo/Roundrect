@@ -268,11 +268,6 @@ div[id="user-context-call"],
 }
 
 /* shamelessly stolen from serenade https://github.com/b4skyx/discord-serenade */
-[class^="lowerBadge-"] {
-  top: 0;
-  left: 0;
-}
-
 [class^="lowerBadge-"]>[class^="numberBadge"] {
   border-radius: var(--avatar-shape);
 }
