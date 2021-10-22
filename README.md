@@ -1,8 +1,8 @@
 # Roundrect
 Theme for Powercord or BetterDiscord starring your favorite shape  
-Includes RadialStatus and RevertRebrand
+Includes RevertRebrand
 ## How to install
 ### Powercord: 
-Install [Theme Toggler](https://github.com/redstonekasi/theme-toggler), then put the `Roundrect-theme` folder into your themes folder
+Install [Theme Toggler](https://github.com/redstonekasi/theme-toggler), then clone this repo into your themes folder
 ### BetterDiscord:
 Put `Roundrect.theme.css` into your themes folder
