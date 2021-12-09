@@ -126,7 +126,7 @@ div[class*="mentioned"]::before {
 }
 
 div[class*="mentioned"] {
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .peopleColumn-29fq28 {
