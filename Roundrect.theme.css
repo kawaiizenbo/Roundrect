@@ -16,10 +16,10 @@
 @import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/general/other.css");
 
 :root {
-  /* colour presets */
+  /* colour presets (only works in dark mode) */
   /* if you want to use a different theme uncomment it and recomment the rest
 
-    /* dark blue mode */
+    /* dark blue mode (default) */
   --bg1: rgb(24, 28, 37);
   --bg2: rgb(22, 26, 35);
   --bg3: rgb(20, 24, 33);
@@ -49,12 +49,12 @@
     --bg4: rgb(31, 0, 0);
     */
 
-  /* darkest mode */
+  /* teal mode */
   /*
-    --bg1: rgb(0, 24, 24);
-    --bg2: rgb(0, 22, 22);
-    --bg3: rgb(0, 20, 20);
-    --bg4: rgb(0, 18, 18);
+    --bg1: rgb(0, 24, 32);
+    --bg2: rgb(0, 22, 30);
+    --bg3: rgb(0, 20, 28);
+    --bg4: rgb(0, 18, 26);
     */
 
   /* darker mode */
@@ -73,40 +73,11 @@
     --bg4: rgb(18, 18, 18);
     */
 
-  /* darkest mode */
-  /*
-    --bg1: rgb(0, 0, 0);
-    --bg2: rgb(0, 0, 0);
-    --bg3: rgb(0, 0, 0);
-    --bg4: rgb(0, 0, 0);
-    */
 
-  /* pisscord mode */
-  /*
-    --bg1: rgb(255, 255, 0);
-    --bg2: rgb(244, 244, 0);
-    --bg3: rgb(233, 233, 0);
-    --bg4: rgb(222, 222, 0);
-    */
+  /* please dont change this stuff */
 
-  /* trans mode */
-  --lbg1: rgb(255, 255, 255);
-  --lbg2: rgb(133, 201, 255);
-  --lbg3: rgb(133, 201, 255);
-  --lbg4: rgb(255, 133, 201);
-
-  /* clear mode (this does not work) */
-  /*
-    --bg1: transparent;
-    --bg2: transparent;
-    --bg3: transparent;
-    --bg4: transparent;
-    */
   --avatar-shape: 20%;
-  /* please dont change this */
-}
-
-.theme-dark {
+  
   --background-tertiary: var(--bg4);
   --background-secondary: var(--bg3);
   --background-secondary-alt: var(--bg3);
@@ -116,32 +87,47 @@
   --background-message-hover: var(--bg2);
   --background-modifier-hover: var(--bg2);
   --background-modifier-active: var(--bg4);
-  --background-modifier-selected: var(--bg4);
   --background-floating: var(--bg3);
   --elevation-low: none;
   --scrollbar-auto-thumb: var(--bg4);
   --scrollbar-auto-track: var(--bg1);
   --scrollbar-thin-thumb: var(--bg4);
   --activity-card-background: var(--bg3);
+
+  --background-mentioned: hsla(-180,calc(var(--saturation-factor, 1)*95.7%),34.1%,0.1);
+  --background-mentioned-hover: hsla(-180,calc(var(--saturation-factor, 1)*95.7%),34.1%,0.08);
 }
 
+.theme-dark
+{
+  --background-modifier-selected: var(--bg4);
+}
+
+
 .theme-light {
-  --background-tertiary: var(--lbg4);
-  --background-secondary: var(--lbg3);
-  --background-secondary-alt: var(--lbg3);
-  --background-primary: var(--lbg1);
-  --channeltextarea-background: var(--lbg3);
-  --background-accent: #6e85d3;
-  --background-message-hover: var(--lbg2);
-  --background-modifier-hover: var(--lbg2);
-  --background-modifier-active: var(--lbg4);
-  --background-modifier-selected: var(--lbg4);
-  --background-floating: var(--lbg3);
-  --elevation-low: none;
-  --scrollbar-auto-thumb: var(--lbg4);
-  --scrollbar-auto-track: var(--lbg1);
-  --scrollbar-thin-thumb: var(--lbg4);
-  --activity-card-background: var(--lbg3);
+  --text-normal: #101010;
+  --channels-default: #303030;
+  --text-muted: #404040;
+  --interactive-muted: #999999;
+
+  --bg1: #FFFFFF;
+  --bg2: #F7F7F7;
+  --bg3: #F0F0F0;
+  --bg4: #E0E0E0;
+  
+}
+
+div[class*="mentioned"]::before {
+  background-color: hsl(-180,calc(var(--saturation-factor, 1)*95.7%),24.1%);
+}
+
+div[class*="mentioned"] {
+  border-radius: 0px 50px 50px 0px;
+}
+
+.theme-light .embedFull-2tM8--
+{
+  background-color: var(--bg4);
 }
 
 .peopleColumn-29fq28 {
@@ -334,7 +320,6 @@ div[id="user-context-call"],
 
 .svg-2V3M55 rect {
   mask: none;
-  rx: 2px;
   stroke-width: 2px;
   stroke: var(--bg3);
 }
