@@ -122,6 +122,7 @@
 }
 
 div[class*="mentioned"]::before {
+  width: 4px;
   background-color: hsl(-180,calc(var(--saturation-factor, 1)*95.7%),24.1%);
 }
 
