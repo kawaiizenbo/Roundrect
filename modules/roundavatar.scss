@@ -1,0 +1,73 @@
+/* shamelessly stolen from serenade https://github.com/b4skyx/discord-serenade */
+[class^="lowerBadge-"]>[class^="numberBadge"] 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-1VLyxH foreignObject,
+:root .callAvatarMask-fiNMWy foreignObject,
+:root .avatarContainer-gPrCzX foreignObject,
+:root .avatarMasked-qX7NI7
+{
+    mask: none;
+    -webkit-mask: none;
+}
+  
+:root .wrapper-1VLyxH,
+:root .avatar-2e8lTP,
+:root .profile-1o7I_1 .avatarUploaderInner-yEhTv5,
+:root .voiceAvatar-lRbblo,
+:root .avatar-3FKimL,
+:root .border-2BJQjd,
+:root .avatar-3TrM7c,
+:root .clickableAvatar-igrb2Y,
+:root .emptyUser-2FDCJv,
+:root .avatar-b5OQ1N,
+:root .wrapper-3mYmFS.ringingIncoming-fibTw-::after,
+:root .wrapper-3mYmFS.ringingOutgoing-1NjfRn::after,
+:root .replyAvatar-sHd2sU,
+:root .avatarSpeaking-33RRJU,
+:root .avatar-2EVtgZ,
+:root .avatarContainer-3tBLDx,
+:root .appAvatar-2_lufo 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-28eC3z foreignObject 
+{
+    mask: none;
+    -webkit-mask: none;
+}
+  
+:root .wrapperSimple-Js2rIO
+{
+    overflow: visible;
+}
+  
+:root .wrapperSimple-Js2rIO,
+:root .wrapper-28eC3z foreignObject,
+:root .folderIconWrapper-226oVY,
+:root .folderIconWrapper-1_bOZe,
+:root .expandedFolderBackground-2sPsd-,
+:root .flexChild-3PzYmX .avatarUploaderInner-yEhTv5 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .iconInactive-26M06U 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-28eC3z foreignObject:hover foreignObject 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+.avatarHint-k7pYop foreignObject:not(.avatarHintInner-2HUAWj) 
+{
+    mask: unset !important;
+}
+  
+/* end of skid */
