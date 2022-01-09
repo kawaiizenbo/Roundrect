@@ -6,4 +6,6 @@ Includes RevertRebrand
 Install [Theme Toggler](https://github.com/redstonekasi/theme-toggler), then clone this repo into your themes folder
 
 ### BetterDiscord:
-Put `Roundrect.theme.css` into your themes folder
+CANARY: Put `Roundrect.theme.css` into your themes folder  
+RELEASE: Put `Roundrect.theme.css.old` into your themes folder and rename it to `Roundrect.theme.css`  
+ 
