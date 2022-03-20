@@ -1,11 +1,11 @@
 :root
 {
-    --background-tertiary: var(--bg4);
-    --background-secondary: var(--bg3);
-    --background-secondary-alt: var(--bg3);
-    --background-primary: var(--bg1);
-    --channeltextarea-background: var(--bg3);
     --background-accent: #6e85d3;
+}
+
+.theme-dark
+{
+    --background-modifier-selected: var(--bg4);
     --background-message-hover: var(--bg2);
     --background-modifier-hover: var(--bg2);
     --background-modifier-active: var(--bg4);
@@ -15,23 +15,11 @@
     --scrollbar-auto-track: var(--bg1);
     --scrollbar-thin-thumb: var(--bg4);
     --activity-card-background: var(--bg3);
-}
-
-.theme-dark
-{
-  --background-modifier-selected: var(--bg4);
-}
-
-.theme-light {
-    --text-normal: #101010;
-    --channels-default: #303030;
-    --text-muted: #404040;
-    --interactive-muted: #999999;
-
-    --bg1: #FFFFFF;
-    --bg2: #F7F7F7;
-    --bg3: #F0F0F0;
-    --bg4: #E0E0E0;
+    --background-tertiary: var(--bg4);
+    --background-secondary: var(--bg3);
+    --background-secondary-alt: var(--bg3);
+    --background-primary: var(--bg1);
+    --channeltextarea-background: var(--bg3);
 }
 
 .theme-light .embedFull-1HGV2S
