@@ -1,0 +1,306 @@
+/**
+* @name Roundrect
+* @author KawaiiZenbo#8387
+* @description starring your favorite shape
+* @version 1.5
+*/
+
+:root 
+{
+    /* colours (only works in dark mode) */
+    --bg1: rgb(24, 28, 37);
+    --bg2: rgb(22, 26, 35);
+    --bg3: rgb(20, 24, 33);
+    --bg4: rgb(18, 22, 31);
+  
+    --avatar-shape: 20%;
+    
+    /* hi-color settings */
+    --hv-mention-colour: #037878;
+    --hv-mention-colour-rgb: 3, 120, 120;
+}
+
+.theme-dark
+{
+    --background-modifier-selected: var(--bg4);
+    --background-message-hover: var(--bg2);
+    --background-modifier-hover: var(--bg2);
+    --background-modifier-active: var(--bg4);
+    --background-floating: var(--bg3);
+    --elevation-low: none;
+    --scrollbar-auto-thumb: var(--bg4);
+    --scrollbar-auto-track: var(--bg1);
+    --scrollbar-thin-thumb: var(--bg4);
+    --activity-card-background: var(--bg3);
+    --background-tertiary: var(--bg4);
+    --background-secondary: var(--bg3);
+    --background-secondary-alt: var(--bg3);
+    --background-primary: var(--bg1);
+    --channeltextarea-background: var(--bg3);
+}
+
+.peopleColumn-1wMU14 
+{
+    background: var(--background-primary);
+}
+
+/* teal mentions */
+.mentioned-Tre-dv
+{
+    background-color: #0378781f !important;
+}
+
+.mentioned-Tre-dv:hover
+{
+    background-color: #03787810 !important;
+}
+
+div[class*="mentioned"]::before 
+{
+    width: 4px;
+    background-color: #037878;
+}
+  
+div[class*="mentioned"] 
+{
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* remove stupid shit/shit i keep clicking on on accident >:( */
+div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
+.wordmarkWindows-2dq6rw,
+div[id="user-context-invite-to-server"],
+div[id="user-context-call"],
+.guildIconContainer-2FW_iA 
+{
+    display: none !important;
+}
+
+/* make image attachments all the way square */
+.imageWrapper-oMkQl4 
+{
+    border-radius: 0;
+}
+
+/* nicer buttons */
+.winButtonClose-3Q8ZH5 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 15%;
+    right: 1px;
+    top: -3px;
+}
+  
+.winButtonMinMax-3RsPUg:nth-child(3) 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 15%;
+    right: 3px;
+    top: -3px;
+}
+  
+.winButtonMinMax-3RsPUg:nth-child(4) 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 15%;
+    right: 5px;
+    top: -3px;
+}
+
+/* reorder top bar */
+.searchBar-zdmu7v 
+{
+    width: 240px;
+}
+
+.iconWrapper-2awDjA 
+{
+    order: -1;
+}
+
+/* remove that weird curve near the top left on windows */
+.platform-win .sidebar-1tnWFu 
+{
+    border-radius: 0 0 0 0;
+}
+
+/* settings wide */
+.contentRegion-3HkfJJ 
+{
+    flex: 1 1 100%;
+}
+  
+.contentColumn-1C7as6,
+.customColumn-2n-oKU,
+.sidebarScrollable-2mW9Ls+.content-2ssVKB,
+.customScroller-m1-jZn>div 
+{
+    max-width: 95%;
+}
+  
+.sidebar-nqHbhN 
+{
+    padding: 60px 0 35px 50px;
+    width: 260px;
+}
+  
+.sidebar-nqHbhN>div>.item-3XjbnG,
+#bd-settings-sidebar .ui-tab-bar-item 
+{
+    padding: 8px 0 8px 10px;
+    margin-bottom: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/* role indicators on user profile */
+.role-2TIOKu 
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: solid;
+    border-width: 0px 0px 0px 2px;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.roleCircle-1EgnFN 
+{
+    width: 5 !important;
+    height: 5 !important;
+}
+
+.roleCircle-1EgnFN::before 
+{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* server channels */
+.content-1gYQeQ 
+{
+    background-color: var(--background-tertiary);
+    border-style: solid;
+    border-color: #666666;
+    border-width: 0px 0px 0px 4px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.unread-36eUEm 
+{
+    z-index: 1;
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    border-radius: 0 0 0 0;
+    top: 1px;
+    left: 8px;
+    margin-top: 0px;
+}
+
+/* message text box */
+.scrollableContainer-15eg7h 
+{
+    border: solid;
+    border-color: var(--background-tertiary);
+    border-width: 0px 0px 0px 4px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+/* status indicators that are broken for no reason sometimes */
+.svg-2azL_l rect 
+{
+  mask: var(--avatar-shape);
+  stroke-width: 2px;
+  stroke: var(--channeltextarea-background);
+}
+
+/* embed round on one side */
+.embedFull-1HGV2S 
+{
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* shamelessly stolen from serenade https://github.com/b4skyx/discord-serenade */
+[class^="lowerBadge-"]>[class^="numberBadge"] 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-1VLyxH foreignObject,
+:root .callAvatarMask-fiNMWy foreignObject,
+:root .avatarContainer-gPrCzX foreignObject,
+:root .avatarMasked-qX7NI7
+{
+    mask: none;
+    -webkit-mask: none;
+}
+  
+:root .wrapper-1VLyxH,
+:root .avatar-2e8lTP,
+:root .profile-1o7I_1 .avatarUploaderInner-yEhTv5,
+:root .voiceAvatar-lRbblo,
+:root .avatar-3FKimL,
+:root .border-2BJQjd,
+:root .avatar-3TrM7c,
+:root .clickableAvatar-igrb2Y,
+:root .emptyUser-2FDCJv,
+:root .avatar-b5OQ1N,
+:root .wrapper-3mYmFS.ringingIncoming-fibTw-::after,
+:root .wrapper-3mYmFS.ringingOutgoing-1NjfRn::after,
+:root .replyAvatar-sHd2sU,
+:root .avatarSpeaking-33RRJU,
+:root .avatar-2EVtgZ,
+:root .avatarContainer-3tBLDx,
+:root .appAvatar-2_lufo 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-28eC3z foreignObject 
+{
+    mask: none;
+    -webkit-mask: none;
+}
+  
+:root .wrapperSimple-Js2rIO
+{
+    overflow: visible;
+}
+  
+:root .wrapperSimple-Js2rIO,
+:root .wrapper-28eC3z foreignObject,
+:root .folderIconWrapper-226oVY,
+:root .folderIconWrapper-1_bOZe,
+:root .expandedFolderBackground-2sPsd-,
+:root .flexChild-3PzYmX .avatarUploaderInner-yEhTv5 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .iconInactive-26M06U 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+:root .wrapper-28eC3z foreignObject:hover foreignObject 
+{
+    border-radius: var(--avatar-shape);
+}
+  
+.avatarHint-k7pYop foreignObject:not(.avatarHintInner-2HUAWj) 
+{
+    mask: unset !important;
+}
+  
+/* end of skid */
+
