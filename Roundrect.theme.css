@@ -2,7 +2,7 @@
 * @name Roundrect
 * @author KawaiiZenbo#8387
 * @description starring your favorite shape
-* @version 1.5
+* @version 1.5.1
 */
 
 :root 
@@ -14,10 +14,6 @@
     --bg4: rgb(18, 22, 31);
   
     --avatar-shape: 20%;
-    
-    /* hi-color settings */
-    --hv-mention-colour: #037878;
-    --hv-mention-colour-rgb: 3, 120, 120;
 }
 
 .theme-dark
@@ -111,9 +107,9 @@ div[id="user-context-call"],
 }
 
 /* reorder top bar */
-.searchBar-zdmu7v 
+.searchBar-jGtisZ
 {
-    width: 240px;
+    width: 210px;
 }
 
 .iconWrapper-2awDjA 
